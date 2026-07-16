@@ -1,6 +1,6 @@
 # AR-VR — Simulation VR de Formation aux Premiers Secours
 
-**AR-VR** est une plateforme de formation en réalité virtuelle (Unity, PC & Meta Quest 2) qui simule des scénarios d'urgence médicale/accidentelle. Le stagiaire évolue au milieu de victimes virtuelles animées, leur parle à voix haute, et reçoit des réponses vocales générées par une IA conversationnelle — le tout piloté par un pipeline **Voix → Texte → IA → Voix** (STT → LLM → TTS) entièrement configurable.
+**AR-VR** est une plateforme de formation en réalité virtuelle (Unity, PC & Meta Quest 2) qui simule des scénarios d'urgence médicale/accidentelle. Le user est au milieu de victimes virtuelles animées, leur parle à voix haute, et reçoit des réponses vocales générées par une IA conversationnelle — le tout piloté par un pipeline **Voix → Texte → IA → Voix** (STT → LLM → TTS) entièrement configurable.
 
 >  Ce dépôt contient le **code source** (scripts C#) et les **ressources de configuration** (fiches victimes, clés API) du projet. Les scènes Unity, prefabs, modèles 3D et animations sont distribués séparément via le fichier `.unitypackage` — voir Installation.
 
@@ -168,13 +168,13 @@ Ajoutez un fichier `.json` dans `Victime-Store/` (même schéma, `id` unique), o
 
 ---
 
-## 📊 Données de sortie
+## Données de sortie
 
 Sous `Application.persistentDataPath/` (nom de dossier défini en dur dans `CheminsDonnees.cs`) : `Feedback/` (sessions Q/R), `Audio/`, `Latence/latence_log.csv`, `Victimes/`, `Config/*.json`.
 
 ---
 
-## 📝 Notes
+## Notes
 
 - `AI_WAV.cs` provient du projet *DigitalPlusPlus*, sous licence **GPL 3.0**.
 - Le `.unitypackage` reste la source de vérité pour les assets non versionnés ici (scènes, modèles, animations).
